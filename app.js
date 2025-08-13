@@ -69,10 +69,10 @@ webapp_up 1
   `);
 });
 
-app.listen(PORT, () => {
-  console.log(`App running on port ${PORT}`);
-  console.log(`Metrics available at http://localhost:${PORT}/metrics`);
-});
+//app.listen(PORT, () => {
+  //console.log(`App running on port ${PORT}`);
+  //console.log(`Metrics available at http://localhost:${PORT}/metrics`);
+//});
 app.listen(3001, () => {
   console.log('Server running on http://localhost:3001');
 });
