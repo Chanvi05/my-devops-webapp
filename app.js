@@ -74,6 +74,16 @@ app.listen(PORT, () => {
   console.log(`Metrics available at http://localhost:${PORT}/metrics`);
 });
 
+const express = require('express');
+const app = express();
+
+app.get('/health', (req, res) => {
+  res.send('OK');
+});
+
+app.listen(3001, () => {
+  console.log('Server running on http://localhost:3001');
+});
 
 
 
